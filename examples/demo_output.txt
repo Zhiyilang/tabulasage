@@ -1,0 +1,30 @@
+================================================================
+ TabulaSage — offline AI profile  |  scikit-learn v1.9.1
+ D:/桌面/part-time jobs/GitHub/tabulasage/examples/sample_customers.csv  |  15 rows x 6 columns
+================================================================
+
+COLUMN PROFILE
+  • age                  numeric   mean=105 std=239 min=27 median=40 max=999 missing=0
+  • income               numeric   mean=56,468 std=21,451 min=15 median=59,000 max=91,000 missing=0
+  • city                 category  unique=3 top='Shanghai'(6) missing=0
+  • tenure_months        numeric   mean=18.7 std=13.7 min=1 median=15 max=48 missing=0
+  • monthly_spend        numeric   mean=266 std=133 min=5 median=260 max=520 missing=0
+  • churned              category  unique=2 top='no'(11) missing=0
+
+ANOMALY DETECTION (IsolationForest)
+  flagged 1 of 15 rows as anomalous
+    [ANOMALY] row 9: age=999, income=15, city=Beijing, tenure_months=1
+    [normal ] row 6: age=61, income=91000, city=Shenzhen, tenure_months=48
+    [normal ] row 13: age=58, income=84000, city=Shenzhen, tenure_months=40
+
+INTERPRETABLE MODEL (target = churned)
+  test accuracy: 100.0%  (classes: ['no', 'yes'])
+  top drivers:
+    - age                      0.571
+    - monthly_spend            0.429
+
+PLAIN-ENGLISH INSIGHTS
+  → IsolationForest flagged 1 row(s) (6.7%) as anomalous — likely data-entry errors or rare cases worth a human look.
+  → Predicting the target: a shallow decision tree reaches 100% test accuracy; the strongest driver is 'age' (importance 0.57).
+
+JSON summary written to D:/桌面/part-time jobs/GitHub/tabulasage/examples/summary.json
