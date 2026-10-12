@@ -1,0 +1,16 @@
+age,income,city,tenure_months,monthly_spend,churned
+34,52000,Shanghai,12,210,no
+29,41000,Beijing,5,150,no
+52,78000,Shanghai,36,430,no
+41,63000,Shenzhen,20,300,yes
+38,59000,Beijing,15,260,no
+27,36000,Shanghai,3,120,no
+61,91000,Shenzhen,48,520,no
+45,66000,Beijing,22,280,yes
+33,47000,Shanghai,9,180,no
+999,15,Beijing,1,5,no
+36,54000,Shenzhen,14,240,no
+48,71000,Shanghai,30,360,yes
+31,44000,Beijing,7,170,no
+58,84000,Shenzhen,40,470,no
+40,61000,Shanghai,18,290,yes
