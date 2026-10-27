@@ -1,0 +1,95 @@
+{
+  "file": "D:/桌面/part-time jobs/GitHub/tabulasage/examples/sample_customers.csv",
+  "rows": 15,
+  "columns": 6,
+  "profiles": [
+    {
+      "name": "age",
+      "type": "numeric",
+      "count": 15,
+      "missing": 0,
+      "mean": 104.8,
+      "std": 239.18896295606953,
+      "min": 27.0,
+      "median": 40.0,
+      "max": 999.0
+    },
+    {
+      "name": "income",
+      "type": "numeric",
+      "count": 15,
+      "missing": 0,
+      "mean": 56467.666666666664,
+      "std": 21450.78016193247,
+      "min": 15.0,
+      "median": 59000.0,
+      "max": 91000.0
+    },
+    {
+      "name": "city",
+      "type": "categorical",
+      "count": 15,
+      "missing": 0,
+      "unique": 3,
+      "top_value": "Shanghai",
+      "top_freq": 6
+    },
+    {
+      "name": "tenure_months",
+      "type": "numeric",
+      "count": 15,
+      "missing": 0,
+      "mean": 18.666666666666668,
+      "std": 13.690223600154317,
+      "min": 1.0,
+      "median": 15.0,
+      "max": 48.0
+    },
+    {
+      "name": "monthly_spend",
+      "type": "numeric",
+      "count": 15,
+      "missing": 0,
+      "mean": 265.6666666666667,
+      "std": 133.45244679493723,
+      "min": 5.0,
+      "median": 260.0,
+      "max": 520.0
+    },
+    {
+      "name": "churned",
+      "type": "categorical",
+      "count": 15,
+      "missing": 0,
+      "unique": 2,
+      "top_value": "no",
+      "top_freq": 11
+    }
+  ],
+  "anomalies": [
+    9
+  ],
+  "n_anomalies": 1,
+  "duplicates": 0,
+  "model": {
+    "accuracy": 1.0,
+    "top_features": [
+      [
+        "age",
+        0.5714285714285714
+      ],
+      [
+        "monthly_spend",
+        0.4285714285714286
+      ]
+    ],
+    "classes": [
+      "no",
+      "yes"
+    ]
+  },
+  "insights": [
+    "IsolationForest flagged 1 row(s) (6.7%) as anomalous — likely data-entry errors or rare cases worth a human look.",
+    "Predicting the target: a shallow decision tree reaches 100% test accuracy; the strongest driver is 'age' (importance 0.57)."
+  ]
+}
